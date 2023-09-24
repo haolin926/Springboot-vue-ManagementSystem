@@ -8,21 +8,22 @@ import {Document, Location, Setting} from "@element-plus/icons-vue";
   <el-row class="tac">
     <el-col>
       <el-menu
-          default-active="2"
+          default-active="/emp"
           class="el-menu-vertical-demo"
           @open="handleOpen"
           @close="handleClose"
-          style="width: 200px;height: calc(100vh - 50px)"
+          style="width: 300px;height: calc(100vh - 50px)"
+          router
       >
-        <el-menu-item index="1">
+        <el-menu-item index="/emp">
           <template #title>
             <el-icon><location></location></el-icon>
-            <span>Navigator One</span>
+            <span>Employee Management</span>
           </template>
         </el-menu-item>
-        <el-menu-item index="2">
+        <el-menu-item index="/dept">
           <el-icon><setting /></el-icon>
-          <span>Navigator Two</span>
+          <span>Department Management</span>
         </el-menu-item>
       </el-menu>
     </el-col>

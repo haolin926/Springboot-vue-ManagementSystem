@@ -1,11 +1,6 @@
 <template>
   <div>
-    <Header></Header>
-
-    <div style="display: flex">
-        <Aside></Aside>
       <router-view/>
-    </div>
   </div>
 </template>
 
@@ -18,7 +13,7 @@
   import Aside from "@/components/Aside.vue";
 
   export default {
-    name:"Layout",
+    name:"App",
     components:{
       Header,
       Aside

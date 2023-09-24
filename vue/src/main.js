@@ -6,9 +6,11 @@ import 'element-plus/dist/index.css'
 import App from './App.vue'
 import '@/assets/css/global.css'
 import * as ELIcons from '@element-plus/icons-vue'
+import {Axios} from "axios";
 
 const app = createApp(App)
 
 app.use(store).use(ElementPlus).use(router).mount('#app')
 
 for (let iconName in ELIcons) {app.component(iconName, ELIcons[iconName]) }
+
