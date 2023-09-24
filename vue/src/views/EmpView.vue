@@ -28,7 +28,7 @@
             <el-form-item label="Address">
               <el-input v-model="newDataForm.address" type="textarea"/>
             </el-form-item>
-            <el-form-item label="Department">
+            <el-form-item label="Department ID">
               <el-input v-model="newDataForm.deptId" />
             </el-form-item>
           </el-form>
@@ -58,7 +58,7 @@
       <el-table-column prop="name" label="Name"/>
       <el-table-column prop="age" label="Age" />
       <el-table-column prop="address" label="Address" />
-      <el-table-column prop="deptId" label="Department" />
+      <el-table-column prop="deptId" label="Department ID" />
 
       <!--operations-->
       <el-table-column label="Operations" width="120">

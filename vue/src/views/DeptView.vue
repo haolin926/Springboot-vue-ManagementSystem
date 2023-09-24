@@ -145,6 +145,7 @@ export default {
       }
       //close dialog
       this.dialogVisible = false
+
       this.load()//refresh data displaying
     },
     load()

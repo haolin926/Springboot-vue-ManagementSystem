@@ -20,6 +20,7 @@ public interface EmpMapper {
             "WHERE name LIKE concat('%',#{name},'%') ")
     List<Emp> list(String search);
 
+
     void update(Emp emp);
 
     @Delete("DELETE FROM employee WHERE id = #{id}")

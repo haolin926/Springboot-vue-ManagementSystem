@@ -52,7 +52,7 @@ public class EmpController {
     }
 
     @PutMapping("/update")
-    public Result<?> update(@RequestParam Emp emp)
+    public Result<?> update(@RequestBody Emp emp)
     {
         empService.update(emp);
         return Result.success();

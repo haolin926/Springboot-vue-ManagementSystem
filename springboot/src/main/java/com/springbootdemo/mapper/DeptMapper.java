@@ -1,5 +1,6 @@
 package com.springbootdemo.mapper;
 
+
 import com.springbootdemo.entity.Dept;
 import org.apache.ibatis.annotations.*;
 
@@ -15,8 +16,6 @@ public interface DeptMapper {
     void save(Dept dept);
 
 
-    void update(Dept dept);
-
     @Delete("DELETE FROM department WHERE dept_id = #{deptId}")
     void delete(Long id);
 
@@ -25,4 +24,7 @@ public interface DeptMapper {
 
     @Select("SELECT * FROM department")
     List<Dept> list2();
+
+    @Update("UPDATE department SET dept_name = #{deptName}, num_emp = #{numEmp} WHERE dept_id = #{deptId}")
+    void update(Dept dept);
 }

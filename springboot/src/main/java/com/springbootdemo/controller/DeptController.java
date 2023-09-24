@@ -34,7 +34,7 @@ public class DeptController {
     }
 
     @PutMapping("/update")
-    public Result<?> update(@RequestParam Dept dept)
+    public Result<?> update(@RequestBody Dept dept)
     {
         deptService.update(dept);
         return Result.success();
