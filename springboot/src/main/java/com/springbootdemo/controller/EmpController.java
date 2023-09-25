@@ -26,19 +26,7 @@ public class EmpController {
     {
         empService.save(emp);
 
-        Dept dept = deptService.selectById(emp.getDeptId());
-        dept.setNumEmp(dept.getNumEmp() + 1);
-        deptService.update(dept);
-
         return Result.success();
-    }
-
-    @GetMapping("/dept")
-    public Result<?> listAllDept()
-    {
-         List<Dept> deptList = deptService.getDepts();
-
-        return Result.success(deptList);
     }
 
     @GetMapping

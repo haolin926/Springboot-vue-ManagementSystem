@@ -10,8 +10,8 @@ import java.util.List;
 @Mapper
 public interface EmpMapper {
 
-    @Insert("INSERT INTO employee (name,age,gender,address,dept_id) VALUES" +
-            " (#{name},#{age},#{gender},#{address},#{deptId})")
+    @Insert("INSERT INTO employee (name,age,gender,address) VALUES" +
+            " (#{name},#{age},#{gender},#{address})")
     void save(Emp emp);
 
 

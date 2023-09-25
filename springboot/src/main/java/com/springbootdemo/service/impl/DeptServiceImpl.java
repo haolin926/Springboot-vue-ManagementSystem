@@ -45,8 +45,4 @@ public class DeptServiceImpl implements DeptService {
         return deptMapper.selectById(id);
     }
 
-    @Override
-    public List<Dept> getDepts() {
-        return deptMapper.list2();
-    }
 }

@@ -18,9 +18,6 @@
             <if test="address != null and address != ''">
                 address = #{address},
             </if>
-            <if test="deptId != null">
-                dept_id = #{deptId},
-            </if>
         </set>
         where id = #{id}
     </update>

@@ -22,9 +22,6 @@ public interface DeptMapper {
     @Select("SELECT * FROM department WHERE dept_id = #{id}")
     Dept selectById(Integer id);
 
-    @Select("SELECT * FROM department")
-    List<Dept> list2();
-
-    @Update("UPDATE department SET dept_name = #{deptName}, num_emp = #{numEmp} WHERE dept_id = #{deptId}")
+    @Update("UPDATE department SET dept_name = #{deptName} WHERE dept_id = #{deptId}")
     void update(Dept dept);
 }

@@ -17,6 +17,4 @@ public interface DeptService {
     void delete(Long id);
 
     Dept selectById(Integer id);
-
-    List<Dept> getDepts();
 }

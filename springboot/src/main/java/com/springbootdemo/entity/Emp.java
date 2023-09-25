@@ -19,7 +19,5 @@ public class Emp {
 
     private String address;
 
-    private Integer deptId;
-
 }
 

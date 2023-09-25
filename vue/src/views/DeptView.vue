@@ -41,7 +41,6 @@
     <el-table :data="tableData" stripe border style="width: 100%">
       <el-table-column prop="deptId" label="ID" sortable/>
       <el-table-column prop="deptName" label="Name"/>
-      <el-table-column prop="numEmp" label="Number of Employer" />
 
       <!--operations-->
       <el-table-column label="Operations" width="120">
@@ -167,6 +166,4 @@ export default {
     this.load()
   }
 }
-
-
 </script>
